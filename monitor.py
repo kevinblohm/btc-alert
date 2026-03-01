@@ -151,8 +151,8 @@ def main() -> None:
             drop_pct = ((rolling_high - price) / rolling_high) * 100
 
             log.info(
-                "BTC $%,.2f  |  24h-high $%,.2f  |  drop %.2f%%",
-                price, rolling_high, drop_pct,
+                "BTC $%s  |  24h-high $%s  |  drop %.2f%%",
+                f"{price:,.2f}", f"{rolling_high:,.2f}", drop_pct,
             )
 
             now = time.time()
